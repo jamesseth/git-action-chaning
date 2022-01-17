@@ -2,8 +2,6 @@ name: Test
 
 on:
   workflow_call:
-    branches:
-      - main
   
 jobs:
   test:
@@ -11,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "Checkout repository on branch: ${{ github.REF }}"
-        uses: actions/checkout@v2
       - name: "call build"
         uses: /jamesseth/git-action-chaning/.github/workflows/build.yml@{ref}
       
