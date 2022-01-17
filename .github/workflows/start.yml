@@ -1,0 +1,16 @@
+name: Test
+
+on:
+  workflow_call:
+  
+jobs:
+  test:
+    name: Build Docker image.
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout repository on branch: ${{ github.REF }}"
+        uses: actions/checkout@v2
+      - name: "call build"
+        uses: /jamesseth/git-action-chaning/.github/workflows/build.yml@{ref}
+      
