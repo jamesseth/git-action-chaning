@@ -1,0 +1,14 @@
+name: Build
+
+on:
+  workflow_call:
+  
+jobs:
+  build:
+    name: Build Docker image.
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Say Helloo"
+        run: |
+          echo "Hello"
