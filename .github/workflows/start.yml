@@ -10,5 +10,5 @@ jobs:
 
     steps:
       - name: "call build"
-        uses: /jamesseth/git-action-chaning/.github/workflows/build.yml@{ref}
+        uses: /jamesseth/git-action-chaning/.github/workflows/build.yml@v
       
